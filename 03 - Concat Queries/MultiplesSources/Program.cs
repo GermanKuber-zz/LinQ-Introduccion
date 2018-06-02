@@ -1,10 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Newtonsoft.Json;
-using static System.Console;
 
-namespace MultiplesSources
+namespace ConcatQueries
 {
     class Program
     {
@@ -21,9 +21,9 @@ namespace MultiplesSources
             //listOfCountries  = listOfCountries.GroupBy(x => x.Country);
 
 
-            listOfCountries.ToList().ForEach(country => WriteLine($"{country.Country} - {country.Area}"));
+            listOfCountries.ToList().ForEach(country => Console.WriteLine($"{country.Country} - {country.Area}"));
 
-            ReadKey();
+            Console.ReadKey();
         }
 
         private static IEnumerable<CountrySelected> GetCountriesJson(string path)

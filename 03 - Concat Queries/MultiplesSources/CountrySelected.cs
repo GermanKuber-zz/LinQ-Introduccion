@@ -1,4 +1,4 @@
-﻿namespace MultiplesSources
+﻿namespace ConcatQueries
 {
     public class CountrySelected
     {
