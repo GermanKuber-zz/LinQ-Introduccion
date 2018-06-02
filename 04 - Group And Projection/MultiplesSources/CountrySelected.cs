@@ -1,4 +1,4 @@
-﻿namespace ConcatQueries
+﻿namespace GroupAndProjection
 {
     public class CountrySelected
     {
