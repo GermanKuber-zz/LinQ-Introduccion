@@ -21,8 +21,6 @@ namespace Filter
             var query = developers.Where(e => e.Name.Length <= 5)
                                   .OrderBy(e => e.Name);
 
-
-
             var query2 = from developer in developers
                          where developer.Name.Length <= 5
                          orderby developer.Name
